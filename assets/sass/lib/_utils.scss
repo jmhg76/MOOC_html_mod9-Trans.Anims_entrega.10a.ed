@@ -1,0 +1,48 @@
+.text_center {
+    text-align: center;
+}
+
+.inline_menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &.centered {
+        justify-content: center;
+    }
+    li {
+        margin-right: $base * 2;
+        a {
+            display: block;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.btn {
+    border: none;
+    display: inline-block;
+    border-radius: 25px 0px 25px 0px;
+    padding: $base $base * 3;
+    margin: $base auto;
+    min-width: 80%;
+    text-align: center;
+    font-weight: bold;
+    &.btn_primary {
+        color: white;
+        border: 3px solid;
+        @extend .bg_color1;
+        @extend .border_color1;
+        &.get_back {
+            // Los botones primarios que vuelve al menú principal son diferentes
+            @extend .colorGray;
+        }
+    }
+    &.btn_secondary {
+        border: 3px solid;
+        @extend .colorGray;
+        @extend .border_colorGray;
+    }
+}

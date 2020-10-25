@@ -1,0 +1,46 @@
+#splash_page,
+#menu_page {
+    .header {
+        padding: $base * 2;
+        flex: 0 0 auto;
+    }
+    .slider {
+        flex: 1 1 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .slider_items {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            .slider_item {
+                max-width: 30%;
+                text-align: center;
+                svg {
+                    height: 120px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .footer {
+        padding: $base * 2;
+        flex: 0 0 auto;
+        width: 100%;
+        text-align: center;
+        .foot_navigation {
+            margin-top: $base * 4;
+            li a {
+                display: flex;
+                flex-direction: column;
+                .mdi {
+                    font-size: 1.1rem;
+                }
+                .label {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

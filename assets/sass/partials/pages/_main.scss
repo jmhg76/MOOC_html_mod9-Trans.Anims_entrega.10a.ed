@@ -1,0 +1,14 @@
+#main_page {
+    display: flex;
+    flex-direction: column;
+    .ui {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .game {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}

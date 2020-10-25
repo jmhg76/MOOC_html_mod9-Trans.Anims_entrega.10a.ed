@@ -1,0 +1,34 @@
+    @import "lib/vars";
+    @import "lib/reboot";
+    @import "lib/keyframes";
+    @import "lib/fontface";
+    @import "lib/colors";
+    @import "lib/typo";
+    @import "lib/utils";
+    @import "partials/layout";
+    @import "partials/modals";
+    //
+    @import "partials/pages/main"; // .scss página #main_page
+    @import "partials/pages/menu"; // .scss página #menu_page
+    @import "partials/pages/pages"; // .scss páginas #menu_page, #settings_page, #leaderboard_page
+    //
+    @import "partials/components/toggle"; // .scss componentes de interruptores tipo Apple
+    @import "partials/components/settings"; // .scss filas de icono, descripción e interruptor
+    @import "partials/components/lboard"; // .scss filas de icono, tabla de records
+    @import "partials/components/imgToAnime"; // .scss imagenes svg con bueno y malo para animar
+    /**
+    * Eliminamos las cajas para poner "en servicio" el juego
+    * {
+        &:not(a) {
+            border: 1px solid pink;
+        }
+    }
+    */
+    
+     :root {
+        --color_1: #{map-get($themes, "color_1")};
+        --color_2: #{map-get($themes, "color_2")};
+        --color_3: #{map-get($themes, "color_3")};
+        --color_4: #{map-get($themes, "gray")};
+        --color_5: #{map-get($themes, "grayLight")};
+    }

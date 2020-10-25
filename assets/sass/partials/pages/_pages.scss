@@ -1,0 +1,19 @@
+#menu_page,
+#settings_page,
+#leaderboard_page {
+    display: flex;
+    flex-direction: column;
+    header {
+        width: 100%;
+    }
+    .main,
+    .slider,
+    .lboard {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        @extend .text_center; // Así conseguimos que los botones se centren
+    }
+}

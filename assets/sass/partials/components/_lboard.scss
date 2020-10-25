@@ -1,0 +1,39 @@
+.lboard_title {
+    font-size: 4rem;
+    line-height: 4rem;
+    color: map-get($themes, color_1); // #FFB454;
+    font-weight: bold;
+    text-align: center;
+}
+
+.lboard_table {
+    width: 100%;
+    counter-reset: item;
+    .lboard_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 $base * 2;
+        &:first-child {
+            color: map-get($themes, color_2); // #D0004F;
+            font-weight: bold;
+        }
+        &.you {
+            color: map-get($themes, color_3); // #73C3F9;
+            font-weight: bold;
+        }
+        &::before {
+            counter-increment: item;
+            content: counter(item);
+            min-width: $base * 4;
+            margin-right: $base * 2;
+        }
+        &:nth-child(n+10) {
+            display: none;
+        }
+        .lboard_item_name {
+            margin-right: auto;
+        }
+        // .lboard_item_p {}
+    }
+}
